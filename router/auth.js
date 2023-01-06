@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
@@ -88,12 +89,10 @@ router.post("/login", async (req, res) => {
 //employee page
 
 router.get("/employee", authenticate, (req, res) => {
-  console.log("middleware executed");
   res.send(req.rootUser);
 });
 
 router.get("/getData", authenticate, (req, res) => {
-  console.log("All data stored here");
   res.send(req.rootUser);
 });
 

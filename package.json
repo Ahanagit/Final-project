@@ -1,7 +1,6 @@
 {
   "name": "csmern",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +16,14 @@
     "joi": "^17.7.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahanagit/csmern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahanagit/csmern/issues"
+  },
+  "homepage": "https://github.com/Ahanagit/csmern#readme",
+  "description": ""
 }
