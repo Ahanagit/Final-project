@@ -26,6 +26,14 @@ const employeeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  image: {
+    type: String,
+    required: true,
+  },
+  postedBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
 });
 
 const Employee = new mongoose.model("EMPLOYEE", employeeSchema);
